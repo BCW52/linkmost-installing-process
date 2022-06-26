@@ -7,6 +7,7 @@ Clone the fils from github. Listmonk Repository :- https://github.com/knadh/list
 Type: git clone https://github.com/knadh/listmonk.git  
 OR
 Type : 
+
           sudo yum install wget 
           cd /opt
           wget "https://github.com/knadh/listmonk/archive/refs/tags/v2.1.0.tar.gz"
@@ -17,6 +18,7 @@ You can also use other package manager like aptitude, dnf, yay etc.
 ## Step 2 — Prepare the Environment
 
 Type: 
+
           sudo yum update # Update your system
           sudo yum upgrade #Upgrade your system
           sudo yum install docker docker-compose  # Install docker & docker-compose
@@ -24,6 +26,7 @@ Type:
 On Ubuntu : 
 
 Type : 
+
           sudo apt install wget ca-certificates #  For a secure SSL connection
           sudo apt update # Update your system
           sudo apt upgrade #Upgrade your system

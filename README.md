@@ -114,5 +114,8 @@ If you change port change it also on config.toml on line 6 and host on 17.
 Run your server.
 
 Type : 
-          docker-compose up app
+          docker-compose up app 
+
+Get linkmost on:
+
           http://localhost:9000

@@ -1,4 +1,4 @@
-# linkmost-installing-process
+# Linkmost-installing-process
 
 ## Step 1 — Get the file
 
@@ -17,9 +17,9 @@ You can also use other package manager like aptitude, dnf, yay etc.
 ## Step 2 — Prepare the Environment
 
 Type: 
-         sudo yum update # Update your system
-         sudo yum upgrade #Upgrade your system
-         sudo yum install docker docker-compose  # Install docker & docker-compose
+          sudo yum update # Update your system
+          sudo yum upgrade #Upgrade your system
+          sudo yum install docker docker-compose  # Install docker & docker-compose
 
 On Ubuntu : 
 
@@ -43,18 +43,21 @@ Type :
 In Cent OS you may have some experience of getting error on docker-compose version or environment variable and path. Now we are gonna fix variable problem which is very much common,
 
 Type : 
+
           sudo groupadd docker # add group docker
           sudo gpasswd -a username docker # add user docker
 
 If you still face Error of docker-compose version follow these command.
 
 Type: 
+
           sudo yum insall curl
           cd /opt
           sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
           sudo chmod +x /usr/local/bin/docker-compose
 
 Then Simple restart docker service.
+
 Type : 
           sudo service docker restart
           docker–compose –-version # Check docker version
@@ -68,6 +71,7 @@ Type: tar xvf v2.1.0.tar.gz
 If you clone the repository 7 & already extract the tar folder the enter the directory of listmonk using for automation system:-
 
 Type :
+
           cd listmonk
           sudo chmod +x install-prod.sh
           ./install-prod.sh  # run linkmost on http://localhost:9000 with user listmonk & password listmonk
@@ -77,7 +81,8 @@ For manual setup:
 ## Step 5 — Edit the config
 
 Type: 
-      nano docker-compose.yml
+
+          nano docker-compose.yml
 
 Edit the Environment section like following on line 24-26:
 

@@ -4,9 +4,10 @@
 
 Clone the fils from github. Listmonk Repository :- https://github.com/knadh/listmonk/ . Or get the latest source code using wget.
 
-Type: 
-          git clone https://github.com/knadh/listmonk.git  
-          
+Type:  
+
+          git clone https://github.com/knadh/listmonk.git
+
 OR
 Type : 
 

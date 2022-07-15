@@ -1,10 +1,11 @@
-# Linkmost-installing-process
+# Listmonk-installing-process
 
 ## Step 1 — Get the file
 
 Clone the fils from github. Listmonk Repository :- https://github.com/knadh/listmonk/ . Or get the latest source code using wget.
 
-Type: git clone https://github.com/knadh/listmonk.git  
+Type: 
+          git clone https://github.com/knadh/listmonk.git  
 OR
 Type : 
 
@@ -37,7 +38,7 @@ For Ubuntu less that 20 version may need these commands:
 
 Type :
           wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -  # Add postgresql key
-          sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' # Add postgresql repository 
+          sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'  
           sudo apt update # Update your system again
           sudo apt install postgresql postgresql-contrib  # Install postgresql and dependencies
 
@@ -77,7 +78,7 @@ Type :
 
           cd listmonk
           sudo chmod +x install-prod.sh
-          ./install-prod.sh  # run linkmost on http://localhost:9000 with user listmonk & password listmonk
+          ./install-prod.sh  # run listmonk on http://localhost:9000 with user listmonk & password listmonk
 
 For manual setup: 
           
@@ -94,6 +95,7 @@ Edit the Environment section like following on line 24-26:
     - POSTGRES_PASSWORD=listmonk
     - POSTGRES_USER=listmonk
     - POSTGRES_DB=listmonk
+    
 
 You can also edit port on line 11 and container name on line 37 for service and 45 for app.
 
@@ -116,6 +118,6 @@ Run your server.
 Type : 
           docker-compose up app 
 
-Get linkmost on:
+Get listmonk on:
 
           http://localhost:9000

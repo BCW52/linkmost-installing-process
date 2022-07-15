@@ -6,6 +6,7 @@ Clone the fils from github. Listmonk Repository :- https://github.com/knadh/list
 
 Type: 
           git clone https://github.com/knadh/listmonk.git  
+          
 OR
 Type : 
 
@@ -37,10 +38,12 @@ Type :
 For Ubuntu less that 20 version may need these commands:
 
 Type :
+
           wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -  # Add postgresql key
           sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'  
           sudo apt update # Update your system again
           sudo apt install postgresql postgresql-contrib  # Install postgresql and dependencies
+
 
 ## Step 3 — Fix the future bug
 
